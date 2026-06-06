@@ -542,6 +542,12 @@ $SYSPWR,82,W,720,KWHYR,9500,INR*7E
 _________________________________________________________________________________________
 This NMEA 0183 stream is what aviation systems would ingest directly from your AWS830 hub. Each line begins with $, includes a sensor identifier, values, and ends with a checksum (*XX).  
 
+Data coupled with Aviation, Maritime and predict AI-LLM across AMD Helios MI455X MI355X
+
+
+<img width="1536" height="1024" alt="Pi" src="https://github.com/user-attachments/assets/2de1c0c9-020d-4f2a-bb63-83a8a3489b25" />
+
+
 1. Here’s a combined multi‑protocol export snapshot showing how your AWS830 hub can simultaneously push JSON, Modbus, and NMEA 0183 streams for different clients.
    This is exactly how aviation, SCADA, and cloud dashboards can all consume the same real‑time data in parallel:
 _________________________________________________________________________________________
