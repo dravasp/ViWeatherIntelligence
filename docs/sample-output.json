@@ -1,0 +1,58 @@
+{
+  "agency_map": {
+    "Severe Weather": {
+      "trigger": "Wind speed > 80 km/h",
+      "recipients": [
+        "DGCA (Directorate General of Civil Aviation)",
+        "ICAO Regional Office",
+        "FAA (for international coordination)",
+        "Airport Operations Control",
+        "Municipal Disaster Management Authority",
+        "Coast Guard"
+      ],
+      "public_api": "https://api.viweatherintelligence.org/v1/public/alerts?type=severe_weather"
+    },
+    "Air Quality": {
+      "trigger": "PM2.5 > 150 µg/m³",
+      "recipients": [
+        "Municipal Health Department",
+        "Hospitals & Emergency Rooms",
+        "Environmental Ministry",
+        "Smart City Dashboard",
+        "WHO regional office (optional)"
+      ],
+      "public_api": "https://api.viweatherintelligence.org/v1/public/alerts?type=air_quality"
+    },
+    "Lightning": {
+      "trigger": "LS7002 detects > 5 strikes/min within 20 km",
+      "recipients": [
+        "Airport Safety Taskforce",
+        "Port Authority",
+        "Fire Brigade",
+        "Disaster Management Authority"
+      ],
+      "public_api": "https://api.viweatherintelligence.org/v1/public/alerts?type=lightning"
+    },
+    "Flood Risk": {
+      "trigger": "Rainfall > 100 mm in 24h",
+      "recipients": [
+        "Municipal Flood Taskforce",
+        "Smart City Control Room",
+        "Urban Planning Department",
+        "Emergency Medical Services",
+        "National Disaster Response Force (NDRF)"
+      ],
+      "public_api": "https://api.viweatherintelligence.org/v1/public/alerts?type=flood_risk"
+    },
+    "Heat Stress": {
+      "trigger": "Temperature > 40°C with humidity > 70%",
+      "recipients": [
+        "Municipal Health Department",
+        "Hospitals",
+        "Occupational Safety Agencies",
+        "Climate Mission Taskforce"
+      ],
+      "public_api": "https://api.viweatherintelligence.org/v1/public/alerts?type=heat_stress"
+    }
+  }
+}
