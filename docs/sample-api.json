@@ -1,0 +1,85 @@
+{
+  "info": {
+    "name": "ViWeatherIntelligence Real-Time Workspace",
+    "description": "Collection for evaluating sensor data, alerts, and feeds across analytics and monitoring platforms",
+    "version": "2.0.0",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Sensor Data Feed",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://api.viweatherintelligence.org/v1/sensors"
+        }
+      },
+      "response": [
+        {
+          "name": "Tableau/Power BI Feed",
+          "body": "{ \"timestamp\": \"2026-08-03T23:05:00\", \"temperature\": 29.4, \"humidity\": 78, \"pm25\": 42, \"wind_speed\": 12.5 }"
+        }
+      ]
+    },
+    {
+      "name": "Geospatial Overlay",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://api.viweatherintelligence.org/v1/sites"
+        }
+      },
+      "response": [
+        {
+          "name": "ArcGIS Feed",
+          "body": "{ \"sites\": [ { \"location\": \"South Mumbai Rooftop\", \"coordinates\": [18.9388, 72.8354], \"status\": \"Active\" }, { \"location\": \"Mumbai Airport\", \"coordinates\": [19.0896, 72.8656], \"status\": \"Active\" } ] }"
+        }
+      ]
+    },
+    {
+      "name": "Live Monitoring Alerts",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://api.viweatherintelligence.org/v1/alerts"
+        }
+      },
+      "response": [
+        {
+          "name": "Grafana Feed",
+          "body": "{ \"alerts\": [ { \"type\": \"Air Quality\", \"value\": 162, \"status\": \"Active\" }, { \"type\": \"Flood Risk\", \"value\": \"120 mm/24h\", \"status\": \"Active\" } ] }"
+        }
+      ]
+    },
+    {
+      "name": "Compliance Standards",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://api.viweatherintelligence.org/v1/compliance"
+        }
+      },
+      "response": [
+        {
+          "name": "Postman Validation",
+          "body": "{ \"standards\": [\"WMO GTS\", \"ICAO Annex 3\", \"IMO SOLAS\", \"UNFCCC reporting\"] }"
+        }
+      ]
+    },
+    {
+      "name": "Mobile Alert Push",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://api.viweatherintelligence.org/v1/public/alerts"
+        }
+      },
+      "response": [
+        {
+          "name": "Mobile Alert Example",
+          "body": "{ \"alert_id\": \"ALR-20260803-001\", \"type\": \"Severe Weather\", \"message\": \"Wind speed exceeded 80 km/h at Mumbai Airport\", \"timestamp\": \"2026-08-03T23:05:00\" }"
+        }
+      ]
+    }
+  ]
+}
