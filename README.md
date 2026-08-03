@@ -623,7 +623,7 @@ ________________________________________________________________________________
 - Clients: Municipal planners, airport systems, industrial SCADA, and cloud dashboards all receive their preferred protocol simultaneously.
 ```
 _________________________________________________________________________________________
-This multi‑protocol export ensures your station is future‑proof: aviation authorities can ingest NMEA, industrial SCADA can poll Modbus registers, and cloud dashboards can parse JSON APIs — all from the same hub.
+This multi‑protocol export ensures your station is future‑proof: aviation authorities can ingest NMEA, industrial SCADA can poll Modbus registers, and cloud dashboards can parse JSON APIs — all from the same hub. Reference API playground on Postman Workspace here.
 _________________________________________________________________________________________
 
 _________________________________________________________________________________________
