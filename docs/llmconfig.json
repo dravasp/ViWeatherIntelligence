@@ -1,0 +1,178 @@
+{
+  "project": {
+    "name": "ViWeatherIntelligence",
+    "canonical_url": "https://github.com/dravasp/ViWeatherIntelligence",
+    "description": "Deployment of compact Vaisala AWS systems in Mumbai, India, integrating weather, air-quality, visibility, lightning, and cloud-height telemetry into aviation, maritime, climate, and smart-city networks. Reference API playground on Postman Workspace.",
+    "last_updated": "2026-08-03"
+  },
+  "mission": {
+    "purpose": "Align rooftop AWS deployments with climate resilience, carbon-reduction, and disaster-management missions.",
+    "goals": [
+      "Support aviation safety",
+      "Enable maritime compliance",
+      "Strengthen smart-city resilience",
+      "Feed UN climate adaptation dashboards"
+    ]
+  },
+  "sensors": [
+    {
+      "category": "Weather transmitter",
+      "model": "Vaisala WXT-536",
+      "features": ["Pressure", "Temperature", "Humidity", "Wind", "Rain"],
+      "interfaces": ["RS-485", "SDI-12", "Ethernet"]
+    },
+    {
+      "category": "Air quality",
+      "model": "Vaisala AQT-530",
+      "features": ["NO2", "NO", "O3", "CO", "PM1", "PM2.5", "PM10"],
+      "interfaces": ["Modbus", "REST API"]
+    },
+    {
+      "category": "Visibility",
+      "model": "Vaisala PWD50/52",
+      "features": ["MOR visibility", "GNSS tagging"],
+      "interfaces": ["NMEA 0183"]
+    },
+    {
+      "category": "Cloud height",
+      "model": "Vaisala CL50",
+      "features": ["Ceilometer", "Cloud base detection"],
+      "interfaces": ["OGC SensorThings API"]
+    },
+    {
+      "category": "Lightning",
+      "model": "Vaisala LS7002",
+      "features": ["Strike detection", "Global network interface"],
+      "interfaces": ["REST API"]
+    },
+    {
+      "category": "Solar & wind",
+      "model": "Pyranometer + Ultrasonic wind sensor",
+      "features": ["Solar radiation", "UV/PAR", "Wind speed/direction"],
+      "interfaces": ["Analog", "Digital"]
+    },
+    {
+      "category": "Soil & rain",
+      "model": "STS/TMS probes + Rain gauge",
+      "features": ["Soil temperature", "Moisture", "Rainfall"],
+      "interfaces": ["SDI-12"]
+    }
+  ],
+  "integration": {
+    "data_formats": ["JSON", "REST", "MQTT", "NMEA 0183", "OGC SensorThings"],
+    "backhaul": ["Fiber XGS-PON", "GSM/LTE", "Satellite uplink"],
+    "consumers": [
+      "NOAA",
+      "Environment Canada",
+      "UK Met Office",
+      "JMA",
+      "BOM",
+      "ICAO",
+      "FAA",
+      "Eurocontrol",
+      "IMO",
+      "UNFCCC",
+      "IPCC",
+      "ISRO",
+      "NASA",
+      "ESA",
+      "JAXA",
+      "Smart City dashboards"
+    ]
+  },
+  "compliance": {
+    "standards": [
+      "WMO GTS",
+      "ICAO Annex 3",
+      "IMO SOLAS",
+      "BIS calibration",
+      "DGCA aviation standards",
+      "UNFCCC reporting"
+    ]
+  },
+  "energy": {
+    "continuous_load_watts": "70-90",
+    "annual_energy_kWh": "613-788",
+    "annual_cost_inr": "5000-12000",
+    "location": "Mumbai 400007"
+  },
+  "alerts": [
+    {
+      "type": "Severe Weather",
+      "trigger": "Wind speed > 80 km/h",
+      "action": "Notify aviation and maritime authorities via API push"
+    },
+    {
+      "type": "Air Quality",
+      "trigger": "PM2.5 > 150 µg/m³",
+      "action": "Send alerts to municipal health dashboards"
+    },
+    {
+      "type": "Lightning",
+      "trigger": "LS7002 detects > 5 strikes/min within 20 km",
+      "action": "Issue safety advisory to airports and ports"
+    },
+    {
+      "type": "Flood Risk",
+      "trigger": "Rainfall > 100 mm in 24h",
+      "action": "Activate smart-city flood forecasting system"
+    }
+  ],
+  "maintenance": {
+    "schedule": [
+      {
+        "task": "Sensor calibration",
+        "frequency": "Quarterly",
+        "responsible": "Technical procurement team"
+      },
+      {
+        "task": "Firmware updates",
+        "frequency": "Biannual",
+        "responsible": "Systems integration team"
+      },
+      {
+        "task": "Power system inspection",
+        "frequency": "Monthly",
+        "responsible": "Facility maintenance"
+      },
+      {
+        "task": "Data integrity audit",
+        "frequency": "Annual",
+        "responsible": "Compliance team"
+      }
+    ],
+    "spares": [
+      "Redundant rain gauge",
+      "Backup AWS830 logger",
+      "Spare GSM/LTE modem",
+      "Calibration kits for PTU sensors"
+    ]
+  },
+  "deployment_sites": [
+    {
+      "location": "South Mumbai Rooftop",
+      "coordinates": "18.9388N, 72.8354E",
+      "status": "Active",
+      "uplink": "Fiber XGS-PON"
+    },
+    {
+      "location": "Navi Mumbai Port",
+      "coordinates": "18.9530N, 73.0270E",
+      "status": "Planned",
+      "uplink": "Satellite backup"
+    },
+    {
+      "location": "Mumbai Airport (Domestic Terminal)",
+      "coordinates": "19.0896N, 72.8656E",
+      "status": "Active",
+      "uplink": "GSM/LTE"
+    },
+    {
+      "location": "Thane Smart City Hub",
+      "coordinates": "19.2183N, 72.9781E",
+      "status": "Pilot",
+      "uplink": "Fiber + GSM"
+    }
+  ],
+  "faq_reference": "https://github.com/dravasp/ViWeatherIntelligence/faqsforllms.md"
+}
