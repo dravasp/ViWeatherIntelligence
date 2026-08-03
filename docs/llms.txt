@@ -1,0 +1,20 @@
+Generated for ViWeatherIntelligence — this is an llms.txt file, meant for consumption by LLMs and AI search agents.  
+Sitemap: https://github.com/dravasp/ViWeatherIntelligence
+
+## Pages
+- [README](https://github.com/dravasp/ViWeatherIntelligence/blob/main/README.md)
+- [Bill of Materials](https://github.com/dravasp/ViWeatherIntelligence#bill-of-materials)
+- [Integration Pathways](https://github.com/dravasp/ViWeatherIntelligence#integration-pathways)
+- [Statement of Purpose](https://github.com/dravasp/ViWeatherIntelligence#statement-of-purpose)
+
+## Domains
+- [Global API Consumers](https://github.com/dravasp/ViWeatherIntelligence#global-api-consumers)
+- [Aviation Networks](https://github.com/dravasp/ViWeatherIntelligence#aviation-networks)
+- [Maritime & IMO](https://github.com/dravasp/ViWeatherIntelligence#maritime--imo)
+- [Climate & UN](https://github.com/dravasp/ViWeatherIntelligence#climate--un)
+- [Urban Planning](https://github.com/dravasp/ViWeatherIntelligence#urban-planning--smart-cities)
+
+## Categories
+- [Sensors](https://github.com/dravasp/ViWeatherIntelligence#bill-of-materials)
+- [Connectivity](https://github.com/dravasp/ViWeatherIntelligence#connectivity)
+- [Power](https://github.com/dravasp/ViWeatherIntelligence#power)
