@@ -6,6 +6,54 @@ ________________________________________________________________________________
 To make Vaisala telemetry from Mumbai globally useful, we need to identify API consumers across different domains who can ingest standardized weather, air quality, lightning, and maritime data streams.
 Here’s a structured mapping of potential consumers worldwide:
 
+_________________________________________________________________________________________
+## Telecommunications Security
+- Security guidelines for telecommunications and Android iOS configuration.
+
+The following settings apply to mostly any smartphone or cellular device connecting to a mobile network in India.
+_________________________________________________________________________________________
+Mobile Networks - Network Operators - Telecom Configuration (Reliance, Vodafone, and Airtel)
+- APN Profiles - Access Point Names (APN Settings)
+- Errors across Software and Device Manufacturers
+
+- `Settings` - `Connections` - `Mobile Networks` - `Network Operators` - Disable Select Automatically and Search for Your Sim Provider - `Choose Reliance Jio`
+
+- Set `Network Mode` (Manual - Disable Select Automatically)
+- If `Reliance` - `5G or LTE` (Disable Others)
+- If `Vodafone` - `LTE/3G/2G` (Select Automatically) or LTE
+- If `Airtel` - `LTE/3G/2G` (Select Automatically) or LTE if available
+
+- You can `create a new APN Profile` by navigating to `Settings` - `Connections` - `Mobile Networks` - `Access Point Names (APN)` - Make sure to select it after settings are applied on your end.
+_________________________________________________________________________________________
+- Access Point Names (APN Settings)
+Settings for Reliance Jio 
+- `Name` - `Jio Digital Platforms (Mumbai)` (You can give it a relevant name of choice - Without Quotes, Must Include Separator Comma and Trailing Slashes within parenthesis)
+- `APN` - `jionet / internet / default`
+- (`Proxy`, `Port`,
+- `Username` - `guest`
+- `Password` - `****` (Same as username)
+- `Server` - `enterprise.jio.com, qos.jio.com, priority.services.net, qos.net`
+- `MMSC` - http://mmsc.jio.com/mmsc
+- `Multimedia Message Proxy` - 202.88.155.201
+- `Multimedia Message Port`) - 8080
+- `MCC` - `405`
+- `MNC` - `874`
+- `Authentication` - `CHAP`
+- `APN Type` - Enter `default, supl, xcap, net, ia, hipri, mms, wap, fota, cbs, mcx, emergency, dun, ims, omadm, mmsmc, vpn, iot, sec, gov, mil`
+- `APN Protocol` - `IPV4/IPV6`
+- `APN Roaming Protocol` - `IPV4/IPV6`
+- `Bearer` - `LTE` or select either one - `IWLAN`, `NR/LTE dual`, `NR (5G)`, `LTE-CA`, `LTE` default selected, `HSPA+`, `HSPA`, `HSUPA`, `HSDPA`, `UMTS`, `EVDO Rev.A`, `EVDO Rev.0`, `1xRTT`, `EDGE`, `GPRS`
+- `Mobile Virtual Network Operator Type` - 
+(Set Any One)
+- If `SPN`
+Mobile Virtual Network Operator Value - `Jio`
+- If `IMSI`
+Mobile Virtual Network Operator Value - `405874x`
+- If `GID`
+Mobile Virtual Network Operator Value - `FFFFFFFFFFFFFFFFFFFF`
+_________________________________________________________________________________________
+Click on the three dot menu on the right and select `Save`.
+
 # Global API Consumers
 ```
 - Government meteorology  
